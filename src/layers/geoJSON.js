@@ -31,7 +31,7 @@ const styleFn = (feature, resolution) => {
 
 export const rasterLayer = new ol.layer.Vector({
   source: new ol.source.Vector({
-    url: 'http://localhost:5000/api/geojson',
+    url: 'https://openlayers-server.vercel.app/api/geojson',
     format: new ol.format.GeoJSON({ featureProjection: 'EPSG:3857' }),
   }),
   style: styleFn,
