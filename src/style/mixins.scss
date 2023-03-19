@@ -1,0 +1,36 @@
+@import "./vars";
+
+@mixin laptop() {
+  @media (max-width: $breakpoint_large) {
+    @content;
+  }
+}
+@mixin small() {
+  @media (max-width: $breakpoint_sm) {
+    @content;
+  }
+}
+@mixin medium() {
+  @media (max-width: $breakpoint_md) {
+    @content;
+  }
+}
+@mixin btn($color, $hoverColor) {
+  background: $color;
+  width: fit-content;
+  border: none;
+  transition: 0.3s linear;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  color: #ffffff;
+
+  &:hover {
+    background: $hoverColor;
+  }
+}

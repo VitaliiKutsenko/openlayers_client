@@ -1,0 +1,6 @@
+{
+  "src/**/*.+(js|jsx)": ["eslint --quiet --fix --color"],
+  "*.{css,scss}": "stylelint --fix",
+  "*.{html,json}": "prettier --write"
+}
+

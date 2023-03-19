@@ -1,0 +1,64 @@
+#popup{
+  position: relative;
+
+  &-content{
+    position: absolute;
+    width: auto;
+    background: white;
+    bottom: 10px;
+    transform:translateX( -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    max-width: 300px;
+
+    & section {
+      border:2px solid rgb(87, 83, 85);
+      background:rgb(87, 83, 85) ;
+      width: auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      height: 100%;
+      gap: 1px;
+      border-radius: 6px;
+      overflow: hidden;
+
+      &:before{
+        content: '';
+        border-right: solid 5px transparent;
+        border-left: solid 5px transparent;
+        border-top: solid 8px rgb(87, 83, 85);
+        position: absolute;
+        left: 50%;
+        bottom: -5px;
+        transform: translate(-50%, 0) ;
+      }
+
+      & div {
+        padding: 3px;
+        gap: 5px;
+        display: flex;
+        font-size: 12px;
+        margin: 2px;
+        background: white;
+        height: fit-content;
+        border-radius: 6px;
+
+        & p {
+          display: block;
+          padding: 2px;
+        }
+
+        & span {
+          display: block;
+          border-radius: 6px;
+          padding: 2px;
+          height: 100%;
+          width: 100%;
+          background: rgba(110, 110, 110, 0.2);
+        }
+      }
+    }
+  }
+}

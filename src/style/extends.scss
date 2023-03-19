@@ -1,0 +1,25 @@
+.effect {
+  transition: 0.3s linear;
+  &:hover {
+    transition: 0.3s linear;
+    box-shadow: 0 0 8px 1px #66c05d, inset 0 0 4px 1px #66c05d;
+  }
+  border-radius: 6px;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.btn {
+  background: #55c97b;
+  width: fit-content;
+  border: none;
+  transition: 0.3s linear;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 8px 16px;
+  &:hover {
+    background: #379658;
+  }
+}
